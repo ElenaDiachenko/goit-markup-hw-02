@@ -1,10 +1,134 @@
-.pane {
-  display: none;
-  padding: 8px;
-  border: 1px solid blue;
-  border-radius: 3px;
+/* цвет фона основной #E5E5E5
+  цвет фона вторичный #F5F4FA
+  цвет футера #2F303A
+
+  цвет текста основной #757575
+  цвет текста вторичный  #212121;
+  цвет акцента основной  #2196F3
+  цвет акцента вторичный #FFFFFF
+
+
+*/
+
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --primary-accent-color: #2196f3;
+  --secondary-accent-color: #ffffff;
+
+  --primary-background: #e5e5e5;
+  --secondary-background: #f5f4fa;
+  --footer-background: #2f303a;
+}
+body {
+  background: var(--primary-background);
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.71;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
 }
 
-.is-active {
-  display: block;
+.logo {
+  color: var(--secondary-text-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+}
+.logo span {
+  color: var(--primary-accent-color);
+}
+
+/* Стили страницы Студия*/
+
+/* Site-nav*/
+.site-nav .link {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
+.connection .link:hover,
+.connection .link:focus {
+  color: var(--primary-accent-color);
+}
+.connection .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+}
+/* HERO*/
+.hero .hero-title {
+  color: var(--secondary-accent-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.section-title {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
+/*BENEFITS*/
+
+.benefits .benefits-title {
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+/*TEAM*/
+
+.team {
+  background-color: var(--secondary-background);
+}
+.team .team-title {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team .team-description {
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+/*footer*/
+.footer {
+  background-color: var(--footer-background);
+}
+.secondary {
+  color: var(--secondary-accent-color);
+}
+.reset {
+  font-style: normal;
+}
+
+/* Стили страницы Портфолио*/
+.button {
+  cursor: pointer;
+}
+.examples .examples-title {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.examples .link {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
 }
